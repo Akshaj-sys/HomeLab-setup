@@ -63,13 +63,13 @@ Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> an
 
 _On Ubuntu:_
 
-<pre> ```bash sudo apt update && sudo apt upgrade -y
+<pre>```bash sudo apt update && sudo apt upgrade -y
 
 sudo apt autoremove && sudo apt clean
 
 sudo reboot
 
-sudo apt install -y build-essential git curl wget``` </pre>
+sudo apt install -y build-essential git curl wget ```</pre>
 
 _On Kali Linux:_
 

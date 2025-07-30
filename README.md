@@ -85,9 +85,10 @@ sudo reboot
 sudo apt install -y nmap wireshark metasploit-framework
 ```
 
-*Screenshot*: Ubuntu Terminal – installing essential tools
+*Screenshot* <img width="604" height="325" alt="Screenshot 2025-07-30 095114" src="https://github.com/user-attachments/assets/d0448e37-a602-4b2a-b904-e1a82dfaa97e" />
+Ubuntu Terminal – installing essential tools
 
-*Screenshot*: Kali Terminal – installing scan and analysis tools
+Kali Terminal – installing scan and analysis tools
 
 **🛡️ 4. Simulated Network Attack & Defense**
 
@@ -96,7 +97,8 @@ From Kali Linux, scanned Ubuntu VM using:
 
 ` nmap -A 10.0.2.15 `
 
-*Screenshot*: Nmap scan results and OS fingerprinting
+*Screenshot*<img width="1892" height="854" alt="Screenshot 2025-07-29 215213" src="https://github.com/user-attachments/assets/e979875c-091a-4ccf-a9dd-32752b24c547" />
+ : Nmap scan results and OS fingerprinting
 
 *✅ Step 8: Configured Ubuntu Firewall*
 
@@ -139,7 +141,8 @@ Shutdown both VMs cleanly
 
 **📉 Network Diagram**
 
-*Screenshot*: Simple topology showing how the attack simulation took place:
+*Screenshot* <img width="604" height="325" alt="Screenshot 2025-07-30 095114" src="https://github.com/user-attachments/assets/1c9e0d84-35e9-4e8d-b8cd-67d8c365a612" />
+ : Simple topology showing how the attack simulation took place:
 
  
 

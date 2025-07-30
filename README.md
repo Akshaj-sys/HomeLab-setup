@@ -101,7 +101,7 @@ From Kali Linux, scanned Ubuntu VM using:
 ` nmap -A 10.0.2.15 `
 
 *Screenshot*  Nmap scan results and OS fingerprinting:
-<img width="1892" height="854" alt="Screenshot 2025-07-29 215213" src="https://github.com/user-attachments/assets/e979875c-091a-4ccf-a9dd-32752b24c547" /> 
+<img width="803" height="684" alt="Screenshot 2025-07-30 133446" src="https://github.com/user-attachments/assets/3127c2c0-158a-4977-b6d1-ac32d96e269c" />
 
 
 
@@ -131,7 +131,8 @@ sudo wireshark
 Ran a second nmap scan from Kali and captured traffic in Wireshark.
 
  *Screenshot*: Wireshark capturing TCP/UDP packets  
-_(already included in screenshot)_
+<img width="1086" height="869" alt="Screenshot 2025-07-30 133510" src="https://github.com/user-attachments/assets/a0c7dd13-d26c-4902-a328-1eab1126e155" />
+
 
 Saved the capture file as:  
 📄 attack.pcapng

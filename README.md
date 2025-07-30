@@ -43,11 +43,11 @@ Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> an
 
 *✅ Step 4: Configured VirtualBox NAT Network*
 
-- Went to **File > Tools > Network Manager**
-- Created a **NAT Network** with:
+- Went to File > Tools > Network Manager
+- Created a *NAT Network* with:
   - IPv4 Prefix: 10.0.2.0/24
   - Enabled DHCP
-- Set each VM’s network adapter to **NAT Network**
+- Set each VM’s network adapter to *NAT Network*
   - Adapter Type: Intel PRO/1000 MT Desktop (82540EM)
   - Checked "Cable Connected"
 
@@ -63,16 +63,19 @@ Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> an
 
 _On Ubuntu:_
 
-<pre>```bash sudo apt update && sudo apt upgrade -y
+```bash
+sudo apt update && sudo apt upgrade -y
 
 sudo apt autoremove && sudo apt clean
 
 sudo reboot
 
-sudo apt install -y build-essential git curl wget ```</pre>
+sudo apt install -y build-essential git curl wget
+```
 
 _On Kali Linux:_
 
+``` bash
 sudo apt update && sudo apt upgrade -y
 
 sudo apt autoremove && sudo apt clean
@@ -80,6 +83,7 @@ sudo apt autoremove && sudo apt clean
 sudo reboot
 
 sudo apt install -y nmap wireshark metasploit-framework
+```
 
 *Screenshot*: Ubuntu Terminal – installing essential tools
 
@@ -90,12 +94,13 @@ sudo apt install -y nmap wireshark metasploit-framework
 *✅ Step 7: Initial Recon Using Nmap*
 From Kali Linux, scanned Ubuntu VM using:
 
-nmap -A 10.0.2.15
+` nmap -A 10.0.2.15 `
 
 *Screenshot*: Nmap scan results and OS fingerprinting
 
 *✅ Step 8: Configured Ubuntu Firewall*
 
+``` bash
 sudo apt install ufw
 
 sudo ufw enable
@@ -105,13 +110,16 @@ sudo ufw allow ssh
 sudo ufw allow from 10.0.2.4
 
 sudo ufw status
+```
 
 *✅ Step 9: Analyzed Network Traffic on Ubuntu*  
 Installed Wireshark:
 
+``` bash
 sudo apt install wireshark
 
 sudo wireshark
+```
 
 Ran a second nmap scan from Kali and captured traffic in Wireshark.
 
@@ -125,7 +133,7 @@ Saved the capture file as:
 
 *✅ Step 10: Clean Shutdown*
 
-sudo poweroff
+` sudo poweroff `
 
 Shutdown both VMs cleanly
 

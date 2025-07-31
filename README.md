@@ -18,7 +18,7 @@ To build a local, controlled cybersecurity lab environment using VirtualBox, Ubu
 - *Kali Linux 2025.2*
 - *Nmap* – Active network scanner
 - *Wireshark* – Network traffic analyser
-- *UFW* – Host-based firewall (Ubuntu)
+- *UFW(uncomplicated firewal)* – Host-based firewall (Ubuntu)
 
 **🧩 Steps**
 

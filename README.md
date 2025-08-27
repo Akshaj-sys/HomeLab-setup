@@ -1,17 +1,17 @@
-# 🔒 Cybersecurity Home Lab Setup
+#  Cybersecurity Home Lab Setup
 
-**📌 Objective**
+**Objective**
 
 To build a local, controlled cybersecurity lab environment using VirtualBox, Ubuntu, and Kali Linux. This lab enables safe, hands-on learning of real-world attack and defense techniques, including network scanning, firewall configuration, and traffic analysis using industry-standard tools.
 
-**🧠 Skills Learned**
+**Skills Learned**
 
 - Practising Virtualisation by installing Virtual box and setting up Ubuntu and Kali Linux VMs on it
 - Basic Linux system Hardening by upgrading, updating and cleaning the system
 - Networking concepts by Running simulated attacks using Nmap, using UFW (Uncomplicated Firewall) to configure firewall rules, analysing network traffic using Wireshark
 - Linux command line basics
 
-**🛠 Tools Used**
+**Tools Used**
 
 - *VirtualBox* 7.0.26 + Extension Pack
 - *Ubuntu 24.04.2*
@@ -20,28 +20,28 @@ To build a local, controlled cybersecurity lab environment using VirtualBox, Ubu
 - *Wireshark* – Network traffic analyser
 - *UFW(uncomplicated firewal)* – Host-based firewall (Ubuntu)
 
-**🧩 Steps**
+**Steps**
 
-**🛠️ 1. Initial Setup & Virtualization**
+**1. Initial Setup & Virtualization**
 
-*✅ Step 1: Installed VirtualBox & Extension Pack*
+*Step 1: Installed VirtualBox & Extension Pack*
 Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> and installed the extension pack for USB, RDP, and networking support.
 
-*✅ Step 2: Downloaded OS Images*
+*Step 2: Downloaded OS Images*
 
 - Ubuntu 24.04.2 LTS from [ubuntu.com](https://ubuntu.com/download)
 - Kali Linux 2025.2 (64-bit) from kali.org
 
-*✅ Step 3: Created VMs*
+*Step 3: Created VMs*
 
 - Created "Ubuntu" and "Kali Linux" virtual machines in VirtualBox
 - Assigned resources (RAM, CPU, disk space) based on system availability
 - Attached respective ISO files to each VM and installed OS normally
 - Created usernames and passwords during OS setup
 
-**🌐 2. Network Configuration**
+**2. Network Configuration**
 
-*✅ Step 4: Configured VirtualBox NAT Network*
+*Step 4: Configured VirtualBox NAT Network*
 
 - Went to File > Tools > Network Manager
 - Created a *NAT Network* with:
@@ -51,15 +51,15 @@ Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> an
   - Adapter Type: Intel PRO/1000 MT Desktop (82540EM)
   - Checked "Cable Connected"
 
-*✅ Step 5: Verified Connectivity*
+*Step 5: Verified Connectivity*
 
 - Powered on both VMs
 - Ran ip a to check IP addresses
 - Used ping to confirm connectivity between the two machines
 
-**🔧 3. System Preparation**
+**3. System Preparation**
 
-*✅ Step 6: System Update & Package Installation*
+*Step 6: System Update & Package Installation*
 
 _On Ubuntu:_
 
@@ -93,9 +93,9 @@ Kali Terminal – installing scan and analysis tools
 
 
 
-**🛡️ 4. Simulated Network Attack & Defense**
+**4. Simulated Network Attack & Defense**
 
-*✅ Step 7: Initial Recon Using Nmap*
+*Step 7: Initial Recon Using Nmap*
 From Kali Linux, scanned Ubuntu VM using:
 
 ` nmap -A 10.0.2.15 `
@@ -105,7 +105,7 @@ From Kali Linux, scanned Ubuntu VM using:
 
 
 
-*✅ Step 8: Configured Ubuntu Firewall*
+*Step 8: Configured Ubuntu Firewall*
 
 ``` bash
 sudo apt install ufw
@@ -119,7 +119,7 @@ sudo ufw allow from 10.0.2.4
 sudo ufw status
 ```
 
-*✅ Step 9: Analyzed Network Traffic on Ubuntu*  
+*Step 9: Analyzed Network Traffic on Ubuntu*  
 Installed Wireshark:
 
 ``` bash
@@ -135,17 +135,17 @@ Ran a second nmap scan from Kali and captured traffic in Wireshark.
 
 
 Saved the capture file as:  
-📄 attack.pcapng
+attack.pcapng
 
-**🔁 5. VM Power-Off**
+** 5. VM Power-Off**
 
-*✅ Step 10: Clean Shutdown*
+*Step 10: Clean Shutdown*
 
 ` sudo poweroff `
 
 Shutdown both VMs cleanly
 
-**📉 Network Diagram**
+**Network Diagram**
 
 *Screenshot* Simple topology showing how the attack simulation took place:
 
@@ -153,7 +153,7 @@ Shutdown both VMs cleanly
 
 
 
-**📈 Impact**
+**Impact**
 
 This project gave me hands-on experience with:
 

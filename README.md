@@ -2,13 +2,13 @@
 
 **Objective**
 
-To build a local, controlled cybersecurity lab environment using VirtualBox, Ubuntu, and Kali Linux. This lab enables safe, hands-on learning of real-world attack and defense techniques, including network scanning, firewall configuration, and traffic analysis using industry-standard tools.
+Set up a local cybersecurity lab with VirtualBox, Ubuntu, and Kali Linux. This safe environment enables hands-on learning of real-world attack and defense techniques, such as network scanning, firewall configuration, and traffic analysis with industry-standard tools.
 
 **Skills Learned**
 
 - Practising Virtualisation by installing Virtual box and setting up Ubuntu and Kali Linux VMs on it
-- Basic Linux system Hardening by upgrading, updating and cleaning the system
-- Networking concepts by Running simulated attacks using Nmap, using UFW (Uncomplicated Firewall) to configure firewall rules, analysing network traffic using Wireshark
+- Basic Linux system hardening by upgrading, updating and cleaning the system
+- Learn networking by running simulated attacks with Nmap. Using UFW (Uncomplicated Firewall) to set firewall rules. Analyze network traffic using Wireshark
 - Linux command line basics
 
 **Tools Used**
@@ -27,7 +27,7 @@ To build a local, controlled cybersecurity lab environment using VirtualBox, Ubu
 *Step 1: Installed VirtualBox & Extension Pack*
 Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> and installed the extension pack for USB, RDP, and networking support.
 
-*Step 2: Downloaded OS Images*
+*Step 2: Download OS Images*
 
 - Ubuntu 24.04.2 LTS from [ubuntu.com](https://ubuntu.com/download)
 - Kali Linux 2025.2 (64-bit) from kali.org
@@ -36,7 +36,7 @@ Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> an
 
 - Created "Ubuntu" and "Kali Linux" virtual machines in VirtualBox
 - Assigned resources (RAM, CPU, disk space) based on system availability
-- Attached respective ISO files to each VM and installed OS normally
+- Attached the respective ISO files to each VM and installed the OS normally
 - Created usernames and passwords during OS setup
 
 **2. Network Configuration**

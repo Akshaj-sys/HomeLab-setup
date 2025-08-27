@@ -24,7 +24,7 @@ Set up a local cybersecurity lab with VirtualBox, Ubuntu, and Kali Linux. This s
 
 **1. Initial Setup & Virtualization**
 
-*Step 1: Installed VirtualBox & Extension Pack*
+*Step 1: Installed VirtualBox & Extension Pack* <br>
 Downloaded the latest version of VirtualBox from <https://www.virtualbox.org> and installed the extension pack for USB, RDP, and networking support.
 
 *Step 2: Download OS Images*
